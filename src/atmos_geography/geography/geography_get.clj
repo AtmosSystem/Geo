@@ -1,7 +1,9 @@
 (in-ns 'atmos-geography.core)
 
-(defn get-cities
-  [])
+(defn get-all-towns
+  []
+  (select towns))
 
-(defn get-towns
-  [])
+(defn get-all-sectors
+  []
+  (select sectors))

@@ -1,15 +1,10 @@
 (ns atmos-geography.api
   (:require [compojure.core :refer [GET defroutes]]
             [atmos-kernel.core :refer [not-found-route
-                                       not-implemented-fn
                                        ms-atmos-method
                                        make-json-app
                                        ms-atmos-response
-                                       ms-atmos-cond-response
-                                       ms-atmos-let-cond-response
                                        ms-atmos-main-method-response
-                                       keyword-map
-                                       request-body
                                        read-resource-edn]]
             [atmos-rdb-kernel.core :refer [defpersistence init-persistence]]
             [atmos-geography.core :refer :all]))
@@ -30,13 +25,15 @@
 ;-------------------------------------------------------
 ; BEGIN Geography functions
 ;-------------------------------------------------------
-(defn- get-cities*
+
+(defn- get-sectors*
   []
-  (ms-atmos-response (get-cities)))
+  (ms-atmos-response (get-all-sectors)))
+
 
 (defn- get-towns*
   []
-  (ms-atmos-response (get-towns)))
+  (ms-atmos-response (get-all-towns)))
 
 ;-------------------------------------------------------
 ; END Geography functions
@@ -47,9 +44,9 @@
            (ms-atmos-main-method-response :geography)
 
            (GET
-             (ms-atmos-method :geography cities)
+             (ms-atmos-method :geography sectors)
              request
-             (get-cities*))
+             (get-sectors*))
 
            (GET
              (ms-atmos-method :geography towns)

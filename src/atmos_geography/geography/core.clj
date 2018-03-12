@@ -5,7 +5,7 @@
            (pk :id)
            (entity-fields :id :name))
 
-(defentity ^:private cities
+(defentity ^:private sectors
 
            (pk :id)
            (entity-fields :id :name))
@@ -17,3 +17,6 @@
 ;------------------------------
 ; END Geography functions
 ;------------------------------
+
+(def sectors "sectors")
+(def towns "towns")
