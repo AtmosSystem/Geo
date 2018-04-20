@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/AtmosSystem/Geography.svg?style=svg)](https://circleci.com/gh/AtmosSystem/Geography)
+
 # Geographic
 
 Atmos micro service for geographic information
