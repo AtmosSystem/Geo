@@ -85,3 +85,4 @@ fabric.properties
 
 .hgignore
 .hg/
+/.lein-env
