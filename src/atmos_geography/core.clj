@@ -1,6 +1,5 @@
 (ns atmos-geography.core
-  (:require [atmos-geography.implementation.core :refer [get-all-sectors
-                                                         get-all-towns]]))
+  (:require [atmos-geography.implementation.core :refer [get-all-sectors get-all-towns]]))
 
 
 ;-------------------------------------------------------

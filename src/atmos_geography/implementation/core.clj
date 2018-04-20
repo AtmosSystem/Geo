@@ -1,10 +1,11 @@
 (ns atmos-geography.implementation.core
   (:require [atmos-data-kernel.persistence.sql :refer [defget-all-entity]]
             [atmos-kernel.configuration :refer [read-edn]]
-            [atmos-data-kernel.persistence.core :refer [defpersistence init-persistence]]
+            [atmos-data-kernel.persistence.core :refer [defpersistence]]
             [environ.core :refer [env]]
             [korma.core :refer :all]
-            [korma.db :as sql]))
+            [korma.db :refer [defdb]]))
+
 
 ;-------------------------------------------------------
 ; BEGIN VARS
@@ -20,7 +21,7 @@
 ;-------------------------------------------------------
 
 ; Persistence initialization
-(->> configuration :database (defpersistence persistence-type) (sql/defdb atmos-geography))
+(->> configuration :database (defpersistence persistence-type) (defdb atmos-geography))
 
 
 (defentity ^:private towns
