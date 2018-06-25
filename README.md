@@ -1,8 +1,8 @@
 [![CircleCI](https://circleci.com/gh/AtmosSystem/Geography.svg?style=svg)](https://circleci.com/gh/AtmosSystem/Geography)
 
-# Geographic
+# Geography
 
-Atmos micro service for geographic information
+Atmos micro service for geo information
 
 ## Entities
 
