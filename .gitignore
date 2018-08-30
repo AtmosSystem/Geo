@@ -86,3 +86,6 @@ fabric.properties
 .hgignore
 .hg/
 /.lein-env
+
+key-store
+trust-store

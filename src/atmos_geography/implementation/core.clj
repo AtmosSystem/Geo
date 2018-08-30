@@ -1,6 +1,7 @@
 (ns atmos-geography.implementation.core
   (:require [atmos-data-kernel.persistence.sql :refer [defget-all-entity]]
             [atmos-kernel.configuration :refer [read-edn]]
+            [atmos-kernel.security.ssl :refer [defssl]]
             [atmos-data-kernel.persistence.core :refer [defpersistence]]
             [environ.core :refer [env]]
             [korma.core :refer :all]
@@ -21,6 +22,7 @@
 ;-------------------------------------------------------
 
 ; Persistence initialization
+(-> configuration :ssl-data defssl)
 (->> configuration :database (defpersistence persistence-type) (defdb atmos-geography))
 
 
