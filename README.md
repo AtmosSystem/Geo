@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/AtmosSystem/Geography.svg?style=svg)](https://circleci.com/gh/AtmosSystem/Geography)
+[![CircleCI](https://circleci.com/gh/AtmosSystem/Geo.svg?style=svg)](https://circleci.com/gh/AtmosSystem/Geo)
 
 # Geo
 
