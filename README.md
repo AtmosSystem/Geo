@@ -2,6 +2,8 @@
 
 # Geo
 
+[![Clojars Project](https://img.shields.io/clojars/v/atmos-geo.svg)](https://clojars.org/atmos-geo)
+
 Atmos micro service for geo information
 
 ## Entities
