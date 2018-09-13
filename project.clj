@@ -1,4 +1,4 @@
-(defproject atmos-geo "1.5"
+(defproject atmos-geo "1.6"
   :description "Atmos geography micro service"
   :url "https://github.com/AtmosSystem"
   :license {:name "Eclipse Public License"
